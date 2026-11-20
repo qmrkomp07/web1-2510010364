@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <defs>
+    <pattern id="p" width="60" height="40" patternUnits="userSpaceOnUse" patternTransform="rotate(-20)">
+      <path d="M0 20 Q15 5 30 20 Q15 35 0 20 Z" fill="#a8d5a2"/>
+      <path d="M30 20 Q45 5 60 20 Q45 35 30 20 Z" fill="#7bc47f"/>
+      <line x1="0" y1="20" x2="60" y2="20" stroke="#2e6b3a" stroke-width="2"/>
+    </pattern>
+  </defs>
+  <rect width="600" height="400" fill="#2f6b3f"/>
+  <rect width="600" height="400" fill="url(#p)" opacity="0.55"/>
+  <rect x="60" y="150" width="480" height="100" rx="14" fill="#ffffff" opacity="0.92"/>
+  <text x="300" y="196" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700" fill="#2f6b3f">Motif Daun Kelapa</text>
+  <text x="300" y="230" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="#444">Sasirangan Banua · gambar contoh</text>
+</svg>

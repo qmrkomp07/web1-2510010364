@@ -2,6 +2,7 @@
 <html lang="id">
 <head>
   <link rel="stylesheet" href="css/style.css">
+  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Katalog kain dan busana Sasirangan khas Banjarmasin karya pengrajin lokal.">
@@ -35,80 +36,25 @@
   <h2>Katalog Produk</h2> 
   <p>Pilihan kain, busana, dan aksesoris Sasirangan terbaru.</p> 
  
-  <div class="katalog-grid"> 
-    <article class="kartu"> 
-      <img src="img/gigi-haruan.svg" alt="Kain sasirangan motif gigi haruan warna merah marun" 
-        width="600" height="400"> 
-      <div class="kartu-isi"> 
-        <h3>Kain Motif Gigi Haruan</h3> 
-        <p>Kain katun 2 meter bermotif zig-zag menyerupai gigi ikan haruan.</p> 
-        <p class="harga">Rp185.000</p> 
-      </div> 
-    </article> 
- 
-    <article class="kartu"> 
-      <img src="img/kambang-kacang.svg" alt="Kain sasirangan motif kambang kacang warna hijau 
-tosca" 
-        width="600" height="400"> 
-      <div class="kartu-isi"> 
-        <h3>Kain Motif Kambang Kacang</h3> 
-        <p>Motif bunga kacang yang melambangkan keakraban dan kerukunan.</p> 
-        <p class="harga">Rp175.000</p> 
-      </div> 
-    </article> 
-
-     <article class="kartu"> 
-      <img src="img/bayam-raja.svg" alt="Kain sasirangan motif Bayam raja" 
-        width="600" height="400"> 
-      <div class="kartu-isi"> 
-        <h3>Kain Motif Bayam raja</h3> 
-        <p>Motif Bayam raja yang melambangkan keakraban dan kerukunan.</p> 
-        <p class="harga">Rp185.000</p> 
-      </div> 
-    </article> 
-
-      <article class="kartu"> 
-      <img src="img/iris-pudak.svg" alt="Kain sasirangan motif Iris Pudak" 
-        width="600" height="400"> 
-      <div class="kartu-isi"> 
-        <h3>Kain Motif Iris pudak</h3> 
-        <p>Motif Iris pudak yang melambangkan keakraban dan kerukunan.</p> 
-        <p class="harga">Rp180.000</p> 
-      </div> 
-    </article>
-
-         <article class="kartu"> 
-      <img src="img/favicon.svg" alt="Kain sasirangan motif Favicon" 
-        width="600" height="400"> 
-      <div class="kartu-isi"> 
-        <h3>Kain Motif Favicon</h3> 
-        <p>Motif Favicon yang melambangkan keakraban dan kerukunan.</p> 
-        <p class="harga">Rp180.000</p> 
-      </div> 
-    </article>
-
-         <article class="kartu"> 
-      <img src="img/naga-balimbur.svg" alt="Kain sasirangan motif Naga balimbur" 
-        width="600" height="400"> 
-      <div class="kartu-isi"> 
-        <h3>Kain Motif Naga balimbur</h3> 
-        <p>Motif Naga balimbur yang melambangkan keakraban dan kerukunan.</p> 
-        <p class="harga">Rp185.000</p> 
-      </div> 
-    </article>
-
-         <article class="kartu"> 
-      <img src="img/ombak-sinapur-karang.svg" alt="Kain sasirangan motif Ombak sinapur" 
-        width="600" height="400"> 
-      <div class="kartu-isi"> 
-        <h3>Kain Motif Ombak sinapur</h3> 
-        <p>Motif Ombak sinapur yang melambangkan keakraban dan kerukunan.</p> 
-        <p class="harga">Rp185.000</p> 
-      </div> 
-    </article>
- 
-    <!-- Tambahkan minimal 4 kartu lagi dengan pola yang sama --> 
-  </div> 
+<div class="kontrol-katalog"> 
+<div class="kolom"> 
+<label for="cari">Cari produk</label> 
+<input type="search" id="cari" placeholder="Contoh: kemeja, selendang"> 
+</div> 
+<div class="filter" role="group" aria-label="Filter kategori"> 
+<button type="button" class="tombol-filter aktif" data-kategori="semua" 
+aria-pressed="true">Semua</button> 
+<button type="button" class="tombol-filter" data-kategori="kain" 
+aria-pressed="false">Kain</button> 
+<button type="button" class="tombol-filter" data-kategori="pakaian" 
+aria-pressed="false">Pakaian</button> 
+<button type="button" class="tombol-filter" data-kategori="aksesoris" 
+aria-pressed="false">Aksesoris</button> 
+</div> 
+</div> 
+<p id="info-jumlah" class="info-jumlah" aria-live="polite"></p> 
+<div id="daftar-katalog" class="katalog-grid"></div> 
+<noscript><p>Aktifkan JavaScript untuk melihat katalog produk.</p></noscript> 
 </section>
 
   <!-- ========== TENTANG ========== --> 
@@ -157,8 +103,7 @@ tosca"
     <p>&copy; 2026 Sasirangan Banua &middot; Kampung Sasirangan, Banjarmasin</p> 
     <p>Dibuat oleh M. Qamaruddin (2510010364) &middot; Praktikum Pemrograman Web 1 UNISKA MAB</p> 
   </footer> 
-</body> 
-</html> 
-
+  
 </body>
-</html>
+<script src="js/katalog.js" ></script> 
+</html> 
